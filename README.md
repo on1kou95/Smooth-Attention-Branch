@@ -1,6 +1,6 @@
 # **Overview**
 Official implementation of the paper ``SAB: Smooth Attention Branch for Biomedical Image Segmentation"
-
+<p align="center"><img width=90% src="fig/SAB.pdf"></p>
 # **Requirements**
 + Python = 3.6
 + Pytorch = 1.10.2
@@ -8,7 +8,7 @@ Official implementation of the paper ``SAB: Smooth Attention Branch for Biomedic
 
 # **Datasets**
 ```
-SAB
+Smooth-Attention-Branch
 ├── Train/
 │   ├── img/
 │   │   ├── train01.png
@@ -38,5 +38,5 @@ You can run a trained model on a sequence of images and visualize the results:
 
 ```
 $ cd Smooth-Attention-Branch/
-$ python SAB/demo_run.py
+$ python demo_run.py
 ```
