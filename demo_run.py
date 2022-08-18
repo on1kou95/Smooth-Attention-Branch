@@ -6,7 +6,7 @@ import numpy as np
 from metrics import LogNLLLoss
 import cv2
 import torch
-from SAB.lib.models.utils import *
+from lib.models.utils import *
 from utils import JointTransform2D, ImageToImage2D, Image2D
 imgchant = 1
 
@@ -24,7 +24,7 @@ valloader = DataLoader(val_dataset, 1, shuffle=True)
 
 device = torch.device("cuda")
 
-from SAB.models.sab_m import SAB
+from models.sab_m import SAB
 model = SAB(img_size = 128, num_classes=2, imgchan = imgchant)
 model.load_state_dict(torch.load(r'.\Output\best_modeldemo.pth'))
 if torch.cuda.device_count() > 1:
