@@ -1,6 +1,7 @@
 # **Overview**
 Official implementation of the paper ``SAB: Smooth Attention Branch for Biomedical Image Segmentation"
 <p align="center"><img width=90% src="fig/SAB.png"></p>
+
 # **Requirements**
 + Python = 3.6
 + Pytorch = 1.10.2
